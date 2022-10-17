@@ -16,17 +16,25 @@ public class index {
             case 8:
             case 10:
             case 12:
-                Day = "31";
+                Day = "31 Ngay";
                 break;
             case 2:
-                Day = "28 va 29";
+                Day = "28 va 29 Ngay";
                 break;
             case 4:
             case 6:
             case 9:
             case 11:
-                Day = "30";
+                Day = "30 Ngay";
                 break;
+            default:
+                Day = "Error";
+                break;
+        }
+        if (month <= 12) {
+            System.out.println("Thang " + month + " Co " + Day);
+        } else {
+            System.out.println(Day);
         }
     }
 }
